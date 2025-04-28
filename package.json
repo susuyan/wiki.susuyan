@@ -7,7 +7,8 @@
     "dev": "next dev --turbo",
     "start": "next start",
     "postinstall": "fumadocs-mdx",
-    "post": "ts-node --compiler-options '{\"module\":\"commonjs\"}' scripts/create-mdx.ts"
+    "post": "ts-node --compiler-options '{\"module\":\"commonjs\"}' scripts/create-mdx.ts",
+    "push": "ts-node --compiler-options '{\"module\":\"commonjs\"}' scripts/push.ts"
   },
   "dependencies": {
     "next": "15.3.1",
