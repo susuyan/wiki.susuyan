@@ -6,7 +6,8 @@
     "build": "next build",
     "dev": "next dev --turbo",
     "start": "next start",
-    "postinstall": "fumadocs-mdx"
+    "postinstall": "fumadocs-mdx",
+    "post": "ts-node --compiler-options '{\"module\":\"commonjs\"}' scripts/create-mdx.ts"
   },
   "dependencies": {
     "next": "15.3.1",
@@ -24,6 +25,7 @@
     "@types/mdx": "^2.0.13",
     "@tailwindcss/postcss": "^4.1.4",
     "tailwindcss": "^4.1.4",
-    "postcss": "^8.5.3"
+    "postcss": "^8.5.3",
+    "ts-node": "^10.9.2"
   }
 }
