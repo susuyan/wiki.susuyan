@@ -14,10 +14,52 @@ function getChangedFiles(): string[] {
 
 function getCommitMessage(files: string[]): string {
   if (files.length === 0) {
-    return `chore: no changes (${new Date().toISOString()})`;
+    return `chore: no changes`;
   }
-  const fileList = files.join(", ");
-  return `chore: update [${fileList}] (${new Date().toISOString()})`;
+  
+  const fileList = files
+    .map(file => {
+      const fileName = file.split('/').pop() || file;
+      return fileName.replace(/\.mdx?$/, '');
+    })
+    .join(', ');
+    
+  // 根据文件类型和变更内容确定提交类型
+  const commitType = (() => {
+    if (files.some(file => file.endsWith('.mdx'))) {
+      return 'docs';
+    } else if (files.some(file => file.includes('package.json'))) {
+      return 'feat';
+    } else if (files.some(file => file.includes('fix'))) {
+      return 'fix';
+    } else {
+      return 'chore';
+    }
+  })();
+  
+  const fileCount = files.length;
+  const isSingleFile = fileCount === 1;
+  
+  // 根据提交类型生成不同的描述
+  const description = (() => {
+    switch (commitType) {
+      case 'docs':
+        return isSingleFile ? '更新文档' : `更新 ${fileCount} 个文档`;
+      case 'feat':
+        return isSingleFile ? '新增功能' : `新增 ${fileCount} 个功能`;
+      case 'fix':
+        return isSingleFile ? '修复问题' : `修复 ${fileCount} 个问题`;
+      default:
+        return isSingleFile ? '更新文件' : `更新 ${fileCount} 个文件`;
+    }
+  })();
+  
+  return `${commitType}: ${description}
+
+${fileList}
+
+变更文件:
+${files.map(file => `- ${file}`).join('\n')}`;
 }
 
 function main() {
