@@ -11,4 +11,14 @@ export const baseOptions: BaseLayoutProps = {
   nav: {
     title: 'wiki.susuyan',
   },  
+  links: [
+    {
+      text: "GitHub",
+      url: "https://github.com/susuyan",
+    },
+    {
+      text: "Weibo",
+      url: "https://weibo.com/u/1621310264",
+    },
+  ],
 };
