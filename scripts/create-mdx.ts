@@ -34,8 +34,6 @@ async function main() {
 title: ${title}
 ---
 
-# ${title}
-
 在这里开始编写你的文档内容...
 `;
     
