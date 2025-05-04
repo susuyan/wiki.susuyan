@@ -1,0 +1,46 @@
+{
+    "$schema": "https://turbo.build/schema.json",
+    "tasks": {
+      "build": {
+        "dependsOn": ["^build", "postinstall"],
+        "outputs": [".next/**", "public/**"],
+        "cache": true
+      },
+      "dev": {
+        "cache": false,
+        "persistent": true,
+        "env": ["NEXT_PUBLIC_*"]
+      },
+      "start": {
+        "dependsOn": ["build"],
+        "cache": false
+      },
+      "postinstall": {
+        "outputs": [],
+        "cache": false
+      },
+      "post": {
+        "dependsOn": ["^build"],
+        "cache": true,
+        "outputs": ["content/**/*.mdx"]
+      },
+      "push": {
+        "cache": false
+      },
+      "format": {
+        "outputs": [],
+        "cache": true
+      },
+      "lint": {
+        "outputs": [],
+        "cache": true
+      }
+    },
+    "globalDependencies": [
+      "tsconfig.json",
+      "next.config.js",
+      "tailwind.config.js",
+      "postcss.config.js",
+      "package.json"
+    ]
+  }

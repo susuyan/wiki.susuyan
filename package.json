@@ -20,14 +20,16 @@
     "fumadocs-mdx": "11.6.1"
   },
   "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.4",
+    "@types/mdx": "^2.0.13",
     "@types/node": "22.14.1",
     "@types/react": "^19.1.2",
     "@types/react-dom": "^19.1.2",
-    "typescript": "^5.8.3",
-    "@types/mdx": "^2.0.13",
-    "@tailwindcss/postcss": "^4.1.4",
-    "tailwindcss": "^4.1.4",
     "postcss": "^8.5.3",
-    "ts-node": "^10.9.2"
-  }
+    "tailwindcss": "^4.1.4",
+    "ts-node": "^10.9.2",
+    "turbo": "^2.5.2",
+    "typescript": "^5.8.3"
+  },
+  "packageManager": "npm@8.5.0"
 }
