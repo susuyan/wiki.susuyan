@@ -12,7 +12,7 @@ interface ColorCardProps {
   title?: string;
 }
 
-export function ColorCard({ initialColors = [{ value: '#F1F5F9' }], title = '' }: ColorCardProps) {
+export function ColorCard({ initialColors = [{ value: '#FFFFFF' }], title = '' }: ColorCardProps) {
   const handleColorCopy = async (colorValue: string) => {
     try {
       await navigator.clipboard.writeText(colorValue);
