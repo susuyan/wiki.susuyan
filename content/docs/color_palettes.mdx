@@ -2,143 +2,16 @@
 title: Color Palettes
 ---
 
-import { Tabs, Tab } from 'fumadocs-ui/components/tabs'
-import { Card } from 'fumadocs-ui/components/card'
+import { ColorCard } from '@/components/ColorCard'
 
-## 调色板
-
-<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-  <Card>
-    <div className="p-4">
-      <div className="h-24 rounded-lg bg-[#007AFF]"></div>
-      <div className="mt-2">
-        <h3 className="font-medium">主色调蓝</h3>
-        <p className="text-sm text-gray-500">#007AFF</p>
-      </div>
-    </div>
-  </Card>
-  
-  <Card>
-    <div className="p-4">
-      <div className="h-24 rounded-lg bg-[#34C759]"></div>
-      <div className="mt-2">
-        <h3 className="font-medium">成功绿</h3>
-        <p className="text-sm text-gray-500">#34C759</p>
-      </div>
-    </div>
-  </Card>
-
-  <Card>
-    <div className="p-4">
-      <div className="h-24 rounded-lg bg-[#FF3B30]"></div>
-      <div className="mt-2">
-        <h3 className="font-medium">警告红</h3>
-        <p className="text-sm text-gray-500">#FF3B30</p>
-      </div>
-    </div>
-  </Card>
-
-  <Card>
-    <div className="p-4">
-      <div className="h-24 rounded-lg bg-[#FF9500]"></div>
-      <div className="mt-2">
-        <h3 className="font-medium">提示橙</h3>
-        <p className="text-sm text-gray-500">#FF9500</p>
-      </div>
-    </div>
-  </Card>
-</div>
-
-## 色彩系统
-
-<Tabs items={['亮色主题', '暗色主题']}>
-  <Tab>
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-      <Card>
-        <div className="p-4">
-          <div className="h-24 rounded-lg bg-[#FFFFFF]"></div>
-          <div className="mt-2">
-            <h3 className="font-medium">背景色</h3>
-            <p className="text-sm text-gray-500">#FFFFFF</p>
-          </div>
-        </div>
-      </Card>
-
-      <Card>
-        <div className="p-4">
-          <div className="h-24 rounded-lg bg-[#F2F2F7]"></div>
-          <div className="mt-2">
-            <h3 className="font-medium">次级背景</h3>
-            <p className="text-sm text-gray-500">#F2F2F7</p>
-          </div>
-        </div>
-      </Card>
-
-      <Card>
-        <div className="p-4">
-          <div className="h-24 rounded-lg bg-[#000000]"></div>
-          <div className="mt-2">
-            <h3 className="font-medium">主要文本</h3>
-            <p className="text-sm text-gray-500">#000000</p>
-          </div>
-        </div>
-      </Card>
-
-      <Card>
-        <div className="p-4">
-          <div className="h-24 rounded-lg bg-[#8E8E93]"></div>
-          <div className="mt-2">
-            <h3 className="font-medium">次要文本</h3>
-            <p className="text-sm text-gray-500">#8E8E93</p>
-          </div>
-        </div>
-      </Card>
-    </div>
-  </Tab>
-  
-  <Tab>
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-      <Card>
-        <div className="p-4">
-          <div className="h-24 rounded-lg bg-[#000000]"></div>
-          <div className="mt-2">
-            <h3 className="font-medium">背景色</h3>
-            <p className="text-sm text-gray-500">#000000</p>
-          </div>
-        </div>
-      </Card>
-
-      <Card>
-        <div className="p-4">
-          <div className="h-24 rounded-lg bg-[#1C1C1E]"></div>
-          <div className="mt-2">
-            <h3 className="font-medium">次级背景</h3>
-            <p className="text-sm text-gray-500">#1C1C1E</p>
-          </div>
-        </div>
-      </Card>
-
-      <Card>
-        <div className="p-4">
-          <div className="h-24 rounded-lg bg-[#FFFFFF]"></div>
-          <div className="mt-2">
-            <h3 className="font-medium">主要文本</h3>
-            <p className="text-sm text-gray-500">#FFFFFF</p>
-          </div>
-        </div>
-      </Card>
-
-      <Card>
-        <div className="p-4">
-          <div className="h-24 rounded-lg bg-[#8E8E93]"></div>
-          <div className="mt-2">
-            <h3 className="font-medium">次要文本</h3>
-            <p className="text-sm text-gray-500">#8E8E93</p>
-          </div>
-        </div>
-      </Card>
-    </div>
-  </Tab>
-</Tabs>
-
+<ColorCard 
+  title = "https://ozo.art/"
+  initialColors={[
+    { value: '#8896A4' },
+    { value: '#05070F' },
+    { value: '#FB7285' },
+    { value: '#39BCF9' },
+    { value: '#F9CC14' }
+  ]}
+/>
 

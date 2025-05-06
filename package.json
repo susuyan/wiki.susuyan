@@ -12,12 +12,14 @@
     "format": "bun run ./scripts/format-mdx.ts"
   },
   "dependencies": {
+    "@heroicons/react": "^2.2.0",
+    "fumadocs-core": "15.2.9",
+    "fumadocs-mdx": "11.6.1",
+    "fumadocs-ui": "15.2.9",
     "next": "15.3.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "fumadocs-ui": "15.2.9",
-    "fumadocs-core": "15.2.9",
-    "fumadocs-mdx": "11.6.1"
+    "sonner": "^2.0.3"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.1.4",
@@ -30,5 +32,5 @@
     "turbo": "^2.5.2",
     "typescript": "^5.8.3"
   },
-  "packageManager": "npm@8.5.0"
+  "packageManager": "bun@1.0.25"
 }
