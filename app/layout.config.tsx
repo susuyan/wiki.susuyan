@@ -13,6 +13,14 @@ export const baseOptions: BaseLayoutProps = {
   },  
   links: [
     {
+      text: "Moments",
+      url: "/moments",
+    },
+    {
+      text: "Publish Moments",
+      url: "/publish_moments",
+    },
+    {
       text: "Learn Anything",
       url: "https://learn-anything.xyz/",
     },
