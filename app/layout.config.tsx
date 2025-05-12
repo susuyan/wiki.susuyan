@@ -13,6 +13,14 @@ export const baseOptions: BaseLayoutProps = {
   },  
   links: [
     {
+      text: "Moments",
+      url: "https://v0-moments-5qhpigxdc-susuyan-projects.vercel.app/moments",
+    },
+    {
+      text: "Publish My Moments",
+      url: "https://v0-moments-5qhpigxdc-susuyan-projects.vercel.app/publish_moments",
+    },
+    {
       text: "Learn Anything",
       url: "https://learn-anything.xyz/",
     },
