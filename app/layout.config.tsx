@@ -26,7 +26,7 @@ export const baseOptions: BaseLayoutProps = {
     },
     {
       text: "Weibo",
-      url: "https://weibo.com/u/1621310264",
+      url: "https://weibo.com/susuyan12",
     },
   ],
 };
