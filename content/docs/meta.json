@@ -5,6 +5,7 @@
     "root": true,
     "pages": [
       "index",
+      "agentic-workflow",
       "---Learning---",
       "a_paragraph_an_instant",
       "focus",
