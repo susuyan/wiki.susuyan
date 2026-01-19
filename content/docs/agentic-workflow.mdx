@@ -1,42 +1,61 @@
 ---
-title: agentic-workflow
+title: Agentic Workflow
+description: 个人 AI 工作流与技术栈收集整理，涵盖模型、开发工具、命令行助手及效率工具。
 ---
 
-### 🧠 Model
+本文档用于收集和整理构建智能工作流（Agentic Workflow）所使用的核心技术栈、工具及模型。
 
-- deepseek
-- qwen
-- openai
-- anthropic
-- glm
-- gemini
-- kimi
-- minimax
+## 🧠 Model (基座模型)
 
-### 🤖 cli
+作为 AI 工作流的核心动力来源，不同的模型在推理、编程或长文本处理上各有所长。
 
-- Claude code
-- Codex
-- Droids
-- Gemini cli
+### 国外主流
+- **OpenAI (GPT-4o)**: 行业综合能力标杆，生态最丰富，适合复杂逻辑任务。
+- **Anthropic (Claude 3.5)**: 编程与逻辑推理能力卓越，拥有超长上下文窗口，Artifacts 体验极佳。
+- **Google (Gemini 1.5)**: 原生多模态能力强，支持百万级 Token 长文本。
 
-###  IDE
-- cursor
-- trae
-- windsurf
-- kiro
+### 国内/开源
+- **DeepSeek (V3/R1)**: 国产开源之光，推理能力强，API 性价比极高，适合大规模调用。
+- **Qwen (通义千问)**: 阿里出品，开源生态活跃，中英文能力均衡，编码能力出色。
+- **GLM (智谱)**: 国内领先的开源模型，工具调用（Function Calling）能力表现不错。
+- **Kimi (Moonshot)**: 长文本处理的先行者，中文语境理解优秀。
+- **Minimax**: 语音合成与角色扮演能力突出，适合交互式应用。
 
+## 💻 IDE (AI 编辑器)
 
-### 🤖 Agent
+深度集成 AI 的代码开发环境，通过“结对编程”重塑开发体验。
 
+- **[Cursor](https://www.cursor.com/)**: 基于 VS Code 二次开发，当前体验最好的 AI 代码编辑器，Composer 功能支持多文件协同修改。
+- **[Trae](https://www.trae.ai/)**: 字节跳动出品的 AI IDE，集成本地与云端能力，注重流畅的交互体验，对中文开发者友好。
+- **[Windsurf](https://codeium.com/windsurf)**: Codeium 推出的 AI IDE，主打 "Flow" 模式，强调上下文感知的连续性。
+- **Kiro**: *(探索中)* 新兴的 AI 辅助开发工具。
 
+## 🤖 CLI (命令行助手)
 
+终端里的 AI 结对程序员，让命令行操作更自然高效。
 
-### 🛠 SKILL
+- **[Claude Code](https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/overview)**: Anthropic 官方推出的 CLI 工具，能直接在终端分析代码库、执行命令并修改文件。
+- **Codex**: 强大的代码生成模型，常作为 CLI 工具（如 GitHub Copilot CLI）的底层驱动。
+- **Droids**: 自动化脚本与机器人集合，用于处理重复性终端任务。
+- **Gemini CLI**: Google 提供的命令行交互工具，方便在终端快速调用 Gemini 能力。
 
-### 📦 Tools
+## � Agent (智能体与框架)
 
+能够自主规划、使用工具并执行任务的智能实体系统。
 
-- https://github.com/vercel-labs/agent-browser
+- *(待补充)*: 如 Coze, Dify, LangChain 等平台或框架。
 
-- https://www.vibekanban.com/
+## 🛠 Skills (最佳实践)
+
+提升 AI 使用效率的关键技巧与方法论。
+
+- **Prompt Engineering**: 结构化提示词编写技巧（如 COT 思维链、Few-Shot Prompting）。
+- **Context Management**: 有效管理上下文窗口，为 AI 提供精准的背景信息。
+- **Workflow Design**: 如何拆解复杂任务，设计 AI 能够稳定执行的工作流。
+
+## 📦 Tools (效率工具)
+
+辅助 AI 工作流的周边生态工具。
+
+- **[Agent Browser](https://github.com/vercel-labs/agent-browser)**: Vercel Labs 推出的实验性浏览器，探索 AI 浏览与操作网页的能力。
+- **[Vibe Kanban](https://www.vibekanban.com/)**: AI 驱动的看板工具，通过对话自动生成和管理任务卡片，适合敏捷开发管理。
