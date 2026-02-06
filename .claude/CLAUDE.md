@@ -6,6 +6,22 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 This is a personal wiki/documentation site built using Next.js, Fumadocs and MDX. It serves as a knowledge base with searchable documentation content.
 
+## Dual-Purpose Architecture
+
+This codebase serves two distinct roles that require different working modes:
+
+### 1. Documentation System (文档系统构建)
+A knowledge management system for organizing, writing, and publishing content.
+- Focus: Content structure, writing workflow, information architecture
+- Key concerns: Navigation, categorization, readability, content lifecycle
+- Primary output: MDX documents in `/content/docs`
+
+### 2. Website Construction (网站建设构建)
+A web application project with UI components, styling, and functionality.
+- Focus: Frontend development, UI/UX, performance, deployment
+- Key concerns: Components, routing, styling, build optimization
+- Primary output: Next.js app in `/app` and React components
+
 ## Project Structure
 
 - `/app` - Next.js application files
@@ -66,11 +82,30 @@ This is a personal wiki/documentation site built using Next.js, Fumadocs and MDX
 
 ## Development Workflow
 
-When Claude assists with tasks in this repository:
-1. **Documentation Creation**: Use the `post` script to create properly formatted MDX files
-2. **Code Changes**: Always check component dependencies and update meta.json when needed
-3. **Publishing**: The `push` script handles build verification, commits, and deployment
-4. **Formatting**: Run `format` script after MDX modifications to maintain consistency
+### Role-Based Working Modes
+
+When working in this repository, identify which role the current task belongs to:
+
+#### Documentation System Mode
+Use when the task involves content management, writing, or information architecture.
+
+1. **Content Creation**: Use `bun run post` to generate properly formatted MDX files
+2. **Organization**: Update `/content/docs/meta.json` to structure navigation
+3. **Publishing**: Use `bun run push` to build, commit, and deploy content changes
+4. **Formatting**: Run `bun run format` after MDX modifications
+
+#### Website Construction Mode
+Use when the task involves UI development, component building, or site functionality.
+
+1. **Component Development**: Create/modify React components in `/components`
+2. **App Changes**: Update routes, layouts, and pages in `/app`
+3. **Dependencies**: Check component dependencies and shared utilities
+4. **Testing**: Verify with `bun dev` before building
+
+### Universal Guidelines
+- Always identify which role the current task serves
+- Keep documentation content separate from app implementation concerns
+- Run `bun build` to verify before committing changes
 
 ## Deployment
 
