@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(bun run build:*)",
+      "Bash(ls:*)",
+      "Bash(find:*)",
+      "Bash(tree -L 3:*)",
+      "Bash(grep:*)",
+      "Bash(bun run format)",
+      "Bash(bun dev)",
+      "Bash(claude mcp add:*)",
+      "Bash(claude mcp list:*)",
+      "Bash(npx @playwright/mcp@latest:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\ndocs: 重构 CLAUDE.md，添加双角色架构说明\n\n- 新增文档系统构建与网站建设构建的双角色定义\n- 按角色区分开发工作流程\n- 明确两种工作模式的操作指南\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(bun build:*)",
+      "Bash(git commit:*)",
+      "Bash(bun run:*)"
+    ]
+  }
+}

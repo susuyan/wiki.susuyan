@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "build": "next build",
-    "dev": "next dev --turbo",
+    "dev": "next dev --turbo -p 3456",
     "start": "next start",
     "postinstall": "fumadocs-mdx",
     "post": "bun run ./scripts/create-mdx.ts",
