@@ -1,0 +1,5 @@
+{
+  "title": "写作",
+  "description": "技术文章、项目复盘与学习记录",
+  "pages": ["index", "tech", "logs"]
+}

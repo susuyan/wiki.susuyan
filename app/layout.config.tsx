@@ -9,24 +9,24 @@ import type { BaseLayoutProps } from 'fumadocs-ui/layouts/shared';
  */
 export const baseOptions: BaseLayoutProps = {
   nav: {
-    title: 'wiki.susuyan',
-  },  
+    title: '苏苏炎',
+  },
   links: [
     {
-      text: "Moments",
-      url: "https://v0-moments-ashen.vercel.app/moments",
+      text: "作品",
+      url: "/docs/works",
     },
     {
-      text: "Learn Anything",
-      url: "https://learn-anything.xyz/",
+      text: "写作",
+      url: "/docs/writing",
+    },
+    {
+      text: "关于",
+      url: "/docs/about",
     },
     {
       text: "GitHub",
       url: "https://github.com/susuyan",
-    },
-    {
-      text: "Weibo",
-      url: "https://weibo.com/susuyan12",
     },
   ],
 };

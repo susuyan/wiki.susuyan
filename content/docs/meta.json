@@ -1,20 +1,17 @@
 {
-  "title": "wiki.susuyan",
-  "description": "The official content source",
+  "title": "苏苏炎",
+  "description": "独立开发者、产品设计师",
   "icon": "Pencil",
   "root": true,
   "pages": [
     "index",
-    "---Projects---",
-    "projects/dsaio-app",
-    "projects/agent-workflow",
-    "---Areas (Wiki)---",
-    "areas/tech",
-    "areas/life",
-    "---Resources---",
-    "resources/design",
-    "resources/templates",
-    "---Archives---",
-    "archives"
+    "---作品---",
+    "works",
+    "---写作---",
+    "writing",
+    "logs",
+    "---关于---",
+    "about",
+    "now"
   ]
 }
